@@ -6,7 +6,7 @@ import { NestedChildComponent } from './nested-child.component';
 
 @NgModule({
   declarations: [
-    NestedChildComponent
+    NestedChildComponent 
   ],
   imports: [
     CommonModule,
