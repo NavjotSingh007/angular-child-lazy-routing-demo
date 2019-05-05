@@ -4,8 +4,8 @@
   </h1>
 </div>
 <a routerLink="/home" >Home</a><br>
-<a routerLink="/child" >Child</a><br>
-<a routerLink="/child/nested-child" >Nested Child</a><br>
+<a (click)="childClicked()" >Child</a><br>
+<a routerLink="/child/nested-child">Nested Child</a><br>
 <router-outlet></router-outlet>
 
 

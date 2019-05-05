@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { ChildRouteData } from './child-route-data';
 
 @Component({
   selector: 'app-child',
@@ -7,9 +9,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ChildComponent implements OnInit {
 
-  constructor() { }
+  childRouteData:ChildRouteData;
 
-  ngOnInit() {
+  constructor(private activatedRoute: ActivatedRoute) { }
+
+  async ngOnInit() {
+    this.childRouteData = await this.getRouteData();
+  }
+
+  getRouteData():Promise<ChildRouteData>{
+    return new Promise(
+      (resolve, reject)=>{
+        resolve(<ChildRouteData>this.activatedRoute.snapshot.params);
+      }
+    );
   }
 
 }
