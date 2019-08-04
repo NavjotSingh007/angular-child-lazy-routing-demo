@@ -16,7 +16,7 @@ export class AppComponent implements OnDestroy{
   ){}
 
   childClicked(){
-    this.childRouteData.message='hi child from home';
+    this.childRouteData.message='hey child from home';
     this.router.navigate(['/child',this.childRouteData]);
   }
 
