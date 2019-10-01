@@ -1,3 +1,3 @@
 # AngularChildLazyRoutingDemo
 
-It contains test component
+It contains POC as a test component
