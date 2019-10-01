@@ -1,3 +1,3 @@
 # AngularChildLazyRoutingDemo
 
-It contains POC as a test component
+It contains POC (Proof Of Concept) as a test component
